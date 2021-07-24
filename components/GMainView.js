@@ -8,6 +8,7 @@ export default function GMainView() {
 		for (var i = 0; i < 20; i++) {
 			if (i == 5) {
 				newEmails.push({
+					id: Math.random().toString(36).substring(7),
 					sender: 'Rick Astley',
 					subject: 'cool video',
 					message:
@@ -15,6 +16,7 @@ export default function GMainView() {
 				});
 			} else {
 				newEmails.push({
+					id: Math.random().toString(36).substring(7),
 					sender: 'somebody',
 					subject: 'This is a test',
 					message:
@@ -43,10 +45,10 @@ export default function GMainView() {
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-rotate-cw stroke-current text-gray-800 dark:text-gray-400 self-center ml-6 w-4"
+							strokeWidth="3"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="feather feather-rotate-cw stroke-current text-gray-800 dark:text-gray-400 self-center ml-6 w-4"
 						>
 							<polyline points="23 4 23 10 17 10"></polyline>
 							<path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
@@ -60,10 +62,10 @@ export default function GMainView() {
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-more-vertical stroke-current text-gray-800 dark:text-gray-400 ml-6 w-4"
+							strokeWidth="3"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="feather feather-more-vertical stroke-current text-gray-800 dark:text-gray-400 ml-6 w-4"
 						>
 							<circle cx="12" cy="12" r="1"></circle>
 							<circle cx="12" cy="5" r="1"></circle>
@@ -82,10 +84,10 @@ export default function GMainView() {
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="feather feather-chevron-left stroke-current text-gray-400 self-center w-4 mr-4"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className="feather feather-chevron-left stroke-current text-gray-400 self-center w-4 mr-4"
 					>
 						<polyline points="15 18 9 12 15 6"></polyline>
 					</svg>
@@ -96,10 +98,10 @@ export default function GMainView() {
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="feather feather-chevron-right stroke-current text-gray-400 self-center w-4"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className="feather feather-chevron-right stroke-current text-gray-400 self-center w-4"
 					>
 						<polyline points="9 18 15 12 9 6"></polyline>
 					</svg>
@@ -141,7 +143,10 @@ export default function GMainView() {
 
 			<ul className=" flex flex-col flex-grow h-full bg-gray-100 dark:bg-dark-secondary">
 				{emails.map((email) => (
-					<li className="flex flex-row p-2 border-b dark:border-gray-600">
+					<li
+						key={email.id}
+						className="flex flex-row p-2 border-b dark:border-gray-600"
+					>
 						<button className="border-2 border-gray-400 rounded-sm w-4 h-4 self-center"></button>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -150,10 +155,10 @@ export default function GMainView() {
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-star stroke-current text-gray-400 w-5 ml-2"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="feather feather-star stroke-current text-gray-400 w-5 ml-2"
 						>
 							<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
 						</svg>
@@ -209,10 +214,10 @@ function GCenterViewCategorySelectorCell({ svg, text, isSelected }) {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class={`feather feather-rotate-cw stroke-current ${
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					className={`feather feather-rotate-cw stroke-current ${
 						isSelected ? 'text-red-500' : 'text-gray-600 dark:text-gray-400'
 					} self-center`}
 				>

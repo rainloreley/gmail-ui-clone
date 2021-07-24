@@ -1,3 +1,11 @@
 module.exports = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	images: {
+		domains: [
+			'www.gravatar.com',
+			'unavatar.io',
+			'www.gstatic.com',
+			'pbs.twimg.com',
+		],
+	},
+};
