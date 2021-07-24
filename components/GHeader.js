@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function GHeader() {
 	return (
 		<div
@@ -27,11 +25,9 @@ export default function GHeader() {
 							<line x1="21" y1="17" x2="3" y2="17"></line>
 						</svg>
 					</div>
-					<Image
+					<img
 						src="/icons/header-gmail-logo.png"
 						className="w-16 h-10 justify-center self-center mr-9"
-						width="120px"
-						height="30px"
 					/>
 				</div>
 				<div className="flex w-gsearchbar">
@@ -108,11 +104,9 @@ export default function GHeader() {
 				>
 					<path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
 				</svg>
-				<Image
+				<img
 					src="https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3"
 					className="rounded-full mr-4 ml-3 h-10 self-center mx-5 p-1"
-					width="40px"
-					height="40px"
 				/>
 			</div>
 		</div>
