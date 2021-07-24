@@ -27,7 +27,7 @@ export default function GHeader() {
 					</div>
 					<img
 						src="/icons/header-gmail-logo.png"
-						className="w-16 h-10 justify-center self-center mr-9"
+						className="w-18 h-10 justify-center self-center mr-9"
 					/>
 				</div>
 				<div className="flex w-gsearchbar">
